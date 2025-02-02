@@ -4,7 +4,7 @@ sprint:
     name: todoapp
 
   datasource:
-    url: jdbc:postgres://localhost:5432/postgres
+    jdbcUrl: jdbc:postgres://localhost:5432/postgres
     username: mluser
     password: mluser
     hikari:
