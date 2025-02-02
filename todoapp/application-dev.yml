@@ -1,10 +1,10 @@
 a: b
-sprint:
+spring:
   application:
     name: todoapp
-
   datasource:
     jdbcUrl: jdbc:postgres://localhost:5432/postgres
+    url: jdbc:postgres://localhost:5432/postgres
     username: mluser
     password: mluser
     hikari:
