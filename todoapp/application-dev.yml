@@ -3,25 +3,25 @@ spring:
   application:
     name: todoapp
   datasource:
-    jdbcUrl: jdbc:postgres://localhost:5432/postgres
-    url: jdbc:postgres://localhost:5432/postgres
+    jdbcUrl: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5432/postgres
     username: mluser
     password: mluser
     hikari:
       connection-test-query: SELECT 1
-      minimum-idle: 1
-      maximum-pool-size: 3
+      minimum-idle: 5
+      maximum-pool-size: 30
       connection-timeout: 30000
     driver-class-name: org.postgresql.Driver
 analyticsuser:
   datasource:
-    jdbcUrl: jdbc:postgres://localhost:5432/postgres
+    jdbcUrl: jdbc:postgresql://localhost:5432/postgres
     username: analyticsuser
     password: analyticsuser
     hikari:
       connection-test-query: SELECT 1
-      minimum-idle: 1
-      maximum-pool-size: 3
+      minimum-idle: 5
+      maximum-pool-size: 30
       connection-timeout: 30000
     driver-class-name: org.postgresql.Driver
   
