@@ -13,7 +13,8 @@ sprint:
       maximum-pool-size: 3
       connection-timeout: 30000
     driver-class-name: org.postgresql.Driver
-  analyticsuser:
+analyticsuser:
+  datasource:
     jdbcUrl: jdbc:postgres://localhost:5432/postgres
     username: analyticsuser
     password: analyticsuser
