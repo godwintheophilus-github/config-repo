@@ -23,6 +23,29 @@ sprint:
       maximum-pool-size: 3
       connection-timeout: 30000
     driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 50
+        order_inserts: true
+        order_updates: true
+    multipart:
+      max-request-size: 50MB
+      max-file-size: 50MB
+
+server:
+  port: 8080
+  servlet:
+    context-path: /todo
+  compression:
+    enabled: true
+    mime-types: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8,application/json
+    min-response-size: 1024
 
   # cloud:
   #   config:
