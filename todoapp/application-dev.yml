@@ -48,6 +48,10 @@ server:
     mime-types: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8,application/json
     min-response-size: 1024
 
+logging:
+  level:
+    org.springframework.boot.env: DEBUG
+    
   # cloud:
   #   config:
   #     importCheck:
