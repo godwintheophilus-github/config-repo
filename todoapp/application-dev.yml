@@ -1,0 +1,10 @@
+
+sprint:
+  application:
+    name: todoapp
+
+  # cloud:
+  #   config:
+  #     importCheck:
+  #       enabled: false
+      
