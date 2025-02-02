@@ -4,7 +4,7 @@ sprint:
     name: todoapp
 
   datasource:
-    url: jdbc:postgres://0.0.0.0:5432/postgres
+    url: jdbc:postgres://localhost:5432/postgres
     username: mluser
     password: mluser
     hikari:
@@ -14,7 +14,7 @@ sprint:
       connection-timeout: 30000
     driver-class-name: org.postgresql.Driver
   analyticsuser:
-    url: jdbc:postgres://0.0.0.0:5432/postgres
+    url: jdbc:postgres://localhost:5432/postgres
     username: analyticsuser
     password: analyticsuser
     hikari:
