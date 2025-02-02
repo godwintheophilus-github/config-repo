@@ -32,7 +32,8 @@ analyticsuser:
     properties:
       hibernate:
         jdbc:
-          batch_size: 50
+          batch_size: 100
+          fetch_size: 4000
         order_inserts: true
         order_updates: true
     multipart:
@@ -51,7 +52,7 @@ server:
 logging:
   level:
     org.springframework.boot.env: DEBUG
-    
+
   # cloud:
   #   config:
   #     importCheck:
